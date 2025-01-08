@@ -1,0 +1,33 @@
+{
+  "data": {
+    "maintenanceRequests": {
+      "maintenanceRequests": [
+        {
+          "id": 1,
+          "title": "Broken window",
+          "description": "The bedroom window is cracked",
+          "urgency": "URGENT",
+          "status": "OPEN",
+          "createdAt": "2025-01-08T13:10:13.000Z",
+          "__typename": "MaintenanceRequest"
+        },
+        {
+          "id": 2,
+          "title": "Leaky faucet",
+          "description": "The kitchen faucet is leaking",
+          "urgency": "LESS_URGENT",
+          "status": "OPEN",
+          "createdAt": "2025-01-08T13:10:13.000Z",
+          "__typename": "MaintenanceRequest"
+        }
+      ],
+      "metrics": {
+          "openCount": 1,
+          "averageResolutionTime": 1,
+          "urgentCount": 3,
+          "__typename": "Metrics"
+      },
+      "__typename": "MaintenanceRequestResult"
+    }
+  }
+}

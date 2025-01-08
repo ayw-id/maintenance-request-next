@@ -1,14 +1,14 @@
 'use client'
 
-import { Poppins } from "next/font/google";
+// import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ApolloProvider } from '@apollo/client';
 import { ClientApollo } from "./apolloClient";
 import { RequestFormStateProvider } from '../context/maintenanceRequestContext';
 
-const poppins = Poppins({
-  weight: "400"
-});
+// const poppins = Poppins({
+//   weight: "400"
+// });
 
 const isServer = typeof window === 'undefined';
 const apollo = new ClientApollo(isServer);
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins} h-screen bg-[#F8F8FF] text-black`}
+        className={`h-screen bg-[#F8F8FF] text-black`}
       >
         <ApolloProvider client={client}>
           <RequestFormStateProvider>
