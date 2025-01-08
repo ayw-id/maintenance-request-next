@@ -1,0 +1,11 @@
+mutation addRequest($title: String!, $description: String!, $status: STATUS! $urgency: URGENCY!) {
+  addRequest(title: $title, description: $description, status: $status, urgency: $urgency) {
+    ...MaintenanceRequestFragment
+  }
+}
+
+mutation updateRequestStatus($id: Int!, $status: STATUS!, $title: String, $description: String, $urgency: URGENCY) {
+  updateRequestStatus(id: $id, status: $status, title: $title, description: $description, urgency: $urgency) {
+    ...MaintenanceRequestFragment
+  }
+}

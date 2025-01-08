@@ -1,0 +1,12 @@
+query MaintenanceRequests {
+  maintenanceRequests {
+    maintenanceRequests {
+      ...MaintenanceRequestFragment
+    }
+    metrics {
+      openCount
+      averageResolutionTime
+      urgentCount
+    }
+  }
+}

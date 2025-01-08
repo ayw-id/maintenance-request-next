@@ -1,0 +1,9 @@
+fragment MaintenanceRequestFragment on MaintenanceRequest {
+  id
+  title
+  description
+  urgency
+  status
+  createdAt
+  resolvedAt
+}

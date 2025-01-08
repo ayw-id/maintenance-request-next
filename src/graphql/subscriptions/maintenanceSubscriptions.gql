@@ -1,0 +1,12 @@
+subscription saveRequest {
+  saveRequest {
+    maintenanceRequest {
+      ...MaintenanceRequestFragment
+    }
+    metrics {
+      averageResolutionTime
+      openCount
+      urgentCount
+    }
+  }
+}
