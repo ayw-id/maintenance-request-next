@@ -6,7 +6,7 @@ const RequestList: React.FC = () => {
   const maintenanceRequestStore = useMaintenanceRequestStore((state) => state)
 
   return (
-    <div className='bg-green w-full'>
+    <div className='w-full mt-[-12px] md:mt-0'>
       <ul className="list-none">
         {
           maintenanceRequestStore.maintenanceRequests.map((maintenanceRequest, i) => {

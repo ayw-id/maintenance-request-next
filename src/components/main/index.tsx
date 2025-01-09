@@ -2,6 +2,7 @@ import React from 'react';
 import Metrics from './metrics';
 import RequestList from './requestList';
 import { useRequestFormState } from '../../context/maintenanceRequestContext';
+import HeaderForm from '../form/header';
 
 const Home: React.FC = () => {
   const {setRequestForm, requestForm} = useRequestFormState()
@@ -13,7 +14,8 @@ const Home: React.FC = () => {
   }
   
   return (
-    <main className="flex flex-col w-6/12 gap-10 items-center">
+    <main className="flex flex-col w-full md:w-6/12 gap-3 md:gap-10 items-center">
+      <HeaderForm />
       <Metrics />
       <RequestList />
       <div className="fixed bottom-4 right-4">

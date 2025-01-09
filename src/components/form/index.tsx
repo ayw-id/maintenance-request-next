@@ -136,7 +136,7 @@ const Form: React.FC = () => {
   }
 
   return (
-    <main className="flex flex-col w-4/12 gap-10 items-center">
+    <main className="flex flex-col w-full md:w-4/12 px-3 md:px-0 gap-6 items-center">
       <HeaderForm changeRequestFormShowState={changeRequestFormShowState} />
       <label className="relative block w-full">
         <span className="not-sr-only text-slate-400">Urgency *</span>
